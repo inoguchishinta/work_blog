@@ -1,5 +1,12 @@
 <h1>Listing Articles</h1>
 <%= link_to 'New article', new_article_path %>
+
+<%
+=begin%>
+ <br><br>Our blog has <%= Article.public_count %> articles and counting! 
+<%
+=end%>
+
 <table>
   <tr>
     <th>Title</th>
@@ -8,13 +15,23 @@
   </tr>
 
 <% @articles.each do |article| %>
-  <tr>
-    <td><%= article.title %></td>
-    <td><%= article.text %></td>
-    <td><%= link_to 'Show', article_path(article) %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article_path(article),
-                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  <%
+=begin%>
+ <% unless article.archived? %> 
+<%
+=end%>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Destroy', article_path(article),
+                      method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <%
+=begin%>
+ <% end %> 
+<%
+=end%>
 <% end %>
 </table>
