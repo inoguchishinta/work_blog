@@ -56,3 +56,61 @@ a{
   color: $color-white;
   text-decoration: none;
 }
+
+
+.comment-card{
+  margin: 0px;
+}
+
+//comment.erb
+.comments-card{
+  height: 50vh;
+  width: 40vw;
+  text-align: start;
+  padding: $padding-all-default;
+  overflow: overlay;
+  background-color: $color-white;
+  h2{
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
+
+.comment-destroy{
+  margin: 0px;
+}
+
+.comment-form-scope{
+  display: flex;
+  justify-content: center;
+}
+
+.create-comment-scope{
+  margin-top: $size-lg;
+  text-align: start;
+  margin-left: $size-xxxl;
+  input[type="submit"] {
+    border: 0px;
+    height: $size-xl;
+    width: $size-xxxl + $size-md;
+    background-color: $color-default-button;
+    border-radius: $size-xs;
+    padding: $padding-all-min;
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+.comment-destroy a{
+  background-color: $color-destroy-button;
+}
+
+.comment-status{
+}
+
+.comment-title{
+  width: 50vw;
+}
+
+.comment-body{
+  width: 50vw;
+}
