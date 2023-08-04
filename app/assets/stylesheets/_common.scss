@@ -1,0 +1,14 @@
+@import "./additionals/variables";
+// color
+@each $key, $value in $colors {
+  .text-#{$key} {
+    color: $value !important;
+  }
+}
+
+// background-color
+@each $key, $value in $colors {
+  .color-#{$key} {
+    background-color: $value !important;
+  }
+}

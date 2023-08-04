@@ -1,0 +1,58 @@
+
+@import "./additionals/variables";
+@import "./common";
+
+html,
+body{
+  margin: 0px;
+}
+
+section{
+  width: $size-max-vw;
+  text-align: center;
+  table{
+    display: inline-table;
+    width: $size-def-max-vw;
+    text-align: start;
+    margin: auto;
+    border: 1.5px solid $color-solid;
+    border-collapse:  collapse;
+    tr{
+      color: $color-black;
+      background-color: $color-white;
+      th{
+      color: $color-white;
+      background-color: rgb(154, 190, 255);
+      border: 1px solid $color-solid;
+      }
+      td{
+        border: 1px solid $color-solid;
+        padding: $padding-all-min;
+        &.button{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+//Text入力欄
+textarea{
+  width: $size-max;
+  height: $size-xl;
+}
+//Title入力欄
+input[type="text"] {
+  width: $size-max;
+  height: $size-xl;
+}
+
+//button
+a{
+  background-color: $color-default-button;
+  border-radius: $size-xs;
+  padding: $padding-all-min;
+  margin: 5px 2.5px 5px 0;
+  color: $color-white;
+  text-decoration: none;
+}

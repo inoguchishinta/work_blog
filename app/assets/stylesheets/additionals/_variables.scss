@@ -1,0 +1,37 @@
+$color-default-button: rgb(0, 119, 255);
+$color-edit-button: rgb(2, 158, 56);
+$color-destroy-button: rgb(255, 0, 0);
+$color-solid: rgb(10, 10, 10);
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+$colors: (
+  'default': $color-default-button, 
+  'green': $color-edit-button,
+  'red': $color-destroy-button,
+  'grey': $color-solid,
+  'white': $color-white,
+  'black': $color-black
+) !default;
+
+$padding-all-default: 10px 10px 10px 10px;
+$padding-all-min: 5px 5px 5px 5px;
+
+$size-min: 2.5px;
+$size-xs: 5px;
+$size-sm: 10px;
+$size-md: 20px;
+$size-lg: 30px;
+$size-xl: 50px;
+$size-xxl: 75px;
+$size-xxxl: 100px;
+$size-max: 300px;
+
+$size-min-vh:  30vh;
+$size-def-min-vh:  50vh;
+$size-def-max-vh:  70vh;
+$size-max-vh: 100vh;
+
+$size-min-vw:  30vw;
+$size-def-min-vw:  50vw;
+$size-def-max-vw:  70vw;
+$size-max-vw: 100vw;
