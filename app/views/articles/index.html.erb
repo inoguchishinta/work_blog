@@ -6,7 +6,7 @@
 
 <section>
   <table>
-    <tr>
+    <tr class="color-table-head text-white">
       <th>Id</th>
       <th>Title</th>
       <th>Text</th>
@@ -20,9 +20,9 @@
         <td><%= article.id %></td>
         <td><%= article.title %></td>
         <td><%= article.text %></td>
-        <td class="button"><%= link_to 'Show', article_path(article), {class: 'color-blue'}%></td>
-        <td class="button"><%= link_to 'Edit', edit_article_path(article), {class: 'color-blue'}%></td>
-        <td class="button"><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'color-blue' %></td>
+        <td class="button"><%= link_to 'Show', article_path(article), {class: 'color-blue text-white'}%></td>
+        <td class="button"><%= link_to 'Edit', edit_article_path(article), {class: 'color-blue text-white'}%></td>
+        <td class="button"><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'color-blue text-white' %></td>
       </tr>
   <% end %> 
   <% end %>
@@ -30,6 +30,6 @@
 </section>
 <section>
   <div class="new-btn">
-    <%= link_to 'New article', new_article_path, {class: 'color-blue'}%>
+    <%= link_to 'New article', new_article_path, {class: 'color-blue text-white'}%>
   </div>
 </section>

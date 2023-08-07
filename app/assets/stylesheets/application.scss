@@ -24,23 +24,17 @@ section{
     margin: auto;
     border: 1.5px solid $color-grey;
     border-collapse:  collapse;
-    tr{
-      color: $color-black;
-      background-color: $color-white;
-      th{
-      color: $color-white;
-      background-color: rgb(154, 190, 255);
+    th{
       border: 1px solid $color-grey;
       }
-      td{
-        border: 1px solid $color-grey;
-        padding: 5px 5px 5px 5px;
-        &.button{
-          //中央配置 + 縦線削除
-          text-align: center;
-          border-left: 0px;
-          border-right: 0px;
-        }
+    td{
+      border: 1px solid $color-grey;
+      padding: 5px 5px 5px 5px;
+      &.button{
+        //中央配置 + 縦線削除
+        text-align: center;
+        border-left: 0px;
+        border-right: 0px;
       }
     }
   }
@@ -60,11 +54,9 @@ input[type="text"] {
 //button
 //aタグ使っている場所は最初から全部似たようなデザインで統一するつもりなので。
 a{
-  background-color: $color-blue;
   border-radius: 5px;
   padding: 5px 5px 5px 5px;
   margin: 5px 2.5px 5px 0;
-  color: $color-white;
   text-decoration: none;
 }
 //createボタンのmargin
