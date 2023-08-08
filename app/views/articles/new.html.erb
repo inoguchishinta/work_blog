@@ -1,6 +1,11 @@
-<div class="header-float">
+<div class="form-header color-header-back text-white d-flex align-items-center justify-content-right">
   <h1>New article</h1>
-  <%= link_to 'Back', articles_path %>
+  <%= link_to 'Back', articles_path , class: "back-btn btn color-white text-black" %>
 </div>
 
-<%= render 'form' %>
+<section class="blog_card_section">
+  <div class="create_blog_card color-white">
+    <h2>記事作成</h2>
+    <%= render 'form' %>
+  </div>
+</section>
