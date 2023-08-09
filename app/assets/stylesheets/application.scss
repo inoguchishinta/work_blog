@@ -1,58 +1,264 @@
+/*
+*= require normalize-rails
+*= require_self
+*= require_tree .
+ */
 
 @import "./additionals/variables";
-@import "./common";
+@import "./additionals/header";
+@import "_common";
 
 html,
 body{
   margin: 0px;
+  height: 100%;
+  background-color: rgb(226, 249, 255);
 }
 
+//iicom-sub コピペ
+//ここから
+body {
+  font-size: $font-size-md;
+  font-weight: $font-weight-normal;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  line-height: inherit;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+a,
+button,
+.hoverable {
+  @media (hover: hover) {
+    &:hover {
+      transition: opacity 0.3s;
+      opacity: 0.5;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.default-btn-wrapper {
+  width: 200px;
+}
+
+.default-sm-btn-wrapper {
+  width: 150px;
+}
+
+.default-lg-btn-wrapper {
+  width: 220px;
+}
+
+ul {
+  &.error {
+    list-style: none;
+    li {
+      color: $color-red;
+    }
+  }
+}
+//ここまで
+
+
+
+//テーブル
 section{
-  width: $size-max-vw;
+  width: 100%;
   text-align: center;
+  margin: 40px 0;
   table{
     display: inline-table;
-    width: $size-def-max-vw;
+    width: 70%;
     text-align: start;
     margin: auto;
-    border: 1.5px solid $color-solid;
+    border: 1.5px solid $color-grey;
     border-collapse:  collapse;
-    tr{
-      color: $color-black;
-      background-color: $color-white;
-      th{
-      color: $color-white;
-      background-color: rgb(154, 190, 255);
-      border: 1px solid $color-solid;
+    th{
+      border: 1px solid $color-grey;
+      padding: 10px 5px;
       }
-      td{
-        border: 1px solid $color-solid;
-        padding: $padding-all-min;
-        &.button{
-          text-align: center;
-        }
+    td{
+      border: 1px solid $color-grey;
+      padding: 10px 5px;
+      &.button{
+        //中央配置 + 縦線削除
+        border-left: 0px;
+        border-right: 0px;
       }
     }
   }
 }
 
-//Text入力欄
-textarea{
-  width: $size-max;
-  height: $size-xl;
+
+//記事作成カード
+.create_blog_card{
+  width: 40%;
+  padding: 50px 50px 0 50px;
+  border-radius: 10px;
+  .from-input-scope{
+    display: grid;
+  }
+  //Title入力欄
+  input[type="text"] {
+    height: 50px;
+  }
+  //Text入力欄
+  textarea{
+    height: 50px;
+  }
+  //Create Articleボタン
+  input[type="submit"] {
+    width: 40%;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
 }
-//Title入力欄
-input[type="text"] {
-  width: $size-max;
-  height: $size-xl;
+//エラーメッセージ
+.error-message{
+  font-size: 10px;
+  .error-ul{
+    list-style: none;
+  }
 }
 
 //button
-a{
-  background-color: $color-default-button;
-  border-radius: $size-xs;
-  padding: $padding-all-min;
-  margin: 5px 2.5px 5px 0;
-  color: $color-white;
+.btn{
+  border-radius: 5px;
   text-decoration: none;
 }
+//newボタンのmargin
+.new-btn{
+  margin-top: 50px;
+  width: 40%;
+  margin: 40px;
+  padding: 50px 50px 0 50px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  .input-new{
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 17px;
+    text-decoration: none;
+  }
+}
+
+
+
+// .header-float{
+//   width: 100%;
+// }
+
+//showスクリーン
+
+// .show-screen{
+//   width: $size-max-vw;
+// }
+
+// .card{
+//   width: $size-max-vw;
+//   display: flex;
+//   border: 2px solid $color-solid;
+// }
+
+// .blog-card{
+//   margin: auto;
+//   text-align: center;
+//   padding: $padding-all-default;
+//   width: $size-max-vw;
+//   height: $size-def-min-vh;
+//   border-right: 2px solid $color-solid;
+// }
+
+// .blog-body{
+//   font-size: 27px;
+//   text-align: left;
+// }
+// .blog-title{
+//   font-size: 27px;
+//   text-align: left;
+// }
+
+// .comment-card{
+//   margin: 0px;
+// }
+
+// //comment.erb
+// .comments-card{
+//   height: 50vh;
+//   width: 40vw;
+//   text-align: start;
+//   padding: $padding-all-default;
+//   overflow: overlay;
+//   background-color: $color-white;
+//   h2{
+//     background-color: $color-black;
+//     color: $color-white;
+//   }
+// }
+
+// .comment-destroy{
+//   margin: 0px;
+// }
+
+// .comment-form-scope{
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .create-comment-scope{
+//   margin-top: $size-lg;
+//   text-align: start;
+//   margin-left: $size-xxxl;
+//   input[type="submit"] {
+//     border: 0px;
+//     height: $size-xl;
+//     width: $size-xxxl + $size-md;
+//     background-color: $color-default-button;
+//     border-radius: $size-xs;
+//     padding: $padding-all-min;
+//     color: $color-white;
+//     text-decoration: none;
+//   }
+// }
+
+// .comment-destroy a{
+//   background-color: $color-destroy-button;
+// }
+
+// .comment-status{
+// }
+
+// .comment-title{
+//   width: 50vw;
+// }
+
+// .comment-body{
+//   width: 50vw;
+// }
