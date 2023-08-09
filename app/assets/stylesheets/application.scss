@@ -9,7 +9,7 @@
 @import "_common";
 
 html,
-body{
+body {
   margin: 0px;
   height: 100%;
   background-color: rgb(226, 249, 255);
@@ -83,40 +83,49 @@ ul {
 
 
 //テーブル
-section{
-  width: 100%;
-  text-align: center;
-  margin: 40px 0;
-  table{
-    display: inline-table;
-    width: 70%;
-    text-align: start;
-    margin: auto;
-    border: 1.5px solid $color-grey;
-    border-collapse:  collapse;
-    th{
-      border: 1px solid $color-grey;
-      padding: 10px 5px;
-      }
-    td{
-      border: 1px solid $color-grey;
-      padding: 10px 5px;
-      &.button{
-        //中央配置 + 縦線削除
-        border-left: 0px;
-        border-right: 0px;
-      }
+.post-table {
+  width: 70%;
+  border: 1.5px solid $color-grey;
+  border-collapse:  collapse;
+  .post-th {
+    border: 1px solid $color-grey;
+    }
+  .post-td {
+    border: 1px solid $color-grey;
+    &.button {
+      //中央配置 + 縦線削除
+      border-left: 0px;
+      border-right: 0px;
     }
   }
 }
 
-
-//記事作成カード
-.create_blog_card{
+//button
+.btn {
+  border-radius: 5px;
+  text-decoration: none;
+}
+//newボタンのmargin
+.new-btn {
   width: 40%;
   padding: 50px 50px 0 50px;
   border-radius: 10px;
-  .from-input-scope{
+  .input-new {
+    width: 40%;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 17px;
+    text-decoration: none;
+  }
+}
+
+//記事作成カード
+.blog_card {
+  width: 40%;
+  padding: 50px 50px 0 50px;
+  border-radius: 10px;
+  .from-input-scope {
     display: grid;
   }
   //Title入力欄
@@ -124,7 +133,7 @@ section{
     height: 50px;
   }
   //Text入力欄
-  textarea{
+  textarea {
     height: 50px;
   }
   //Create Articleボタン
@@ -137,37 +146,14 @@ section{
   }
 }
 //エラーメッセージ
-.error-message{
+.error-message {
   font-size: 10px;
   .error-ul{
     list-style: none;
   }
 }
 
-//button
-.btn{
-  border-radius: 5px;
-  text-decoration: none;
-}
-//newボタンのmargin
-.new-btn{
-  margin-top: 50px;
-  width: 40%;
-  margin: 40px;
-  padding: 50px 50px 0 50px;
-  border-radius: 10px;
-  display: inline-block;
-  text-align: center;
-  .input-new{
-    display: inline-block;
-    width: 40%;
-    height: 50px;
-    border: 0px;
-    border-radius: 5px;
-    padding: 17px;
-    text-decoration: none;
-  }
-}
+
 
 
 
