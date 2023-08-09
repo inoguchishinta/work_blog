@@ -1,6 +1,6 @@
 <%= form_with(model: @article, local: true,) do |form| %>
   <% if @article.errors.any? %>
-    <div id="error_explanation" class="error-message color-red">
+    <div class="error-message text-red mt-md">
       <h2><%= pluralize(@article.errors.count, "error",) %> prohibited this article from being saved:</h2>
       <ul class="error-ul">
       <% @article.errors.full_messages.each do |msg| %>
@@ -11,18 +11,18 @@
   <% end %>
   <div class="form-scope">
     <p class="text-black from-input-scope">
-      <%= form.label :title , class: "fw-bold form-detail" %>
-      <%= form.text_field :title %>
+      <%= form.label :title , class: "fw-bold my-sm text-left" %>
+      <%= form.text_field :title , class: "m-auto w-100" %>
     </p>
 
     <p class="text-black from-input-scope">
-      <%= form.label :text , class: "fw-bold form-detail" %>
-      <%= form.text_area :text %>
+      <%= form.label :text , class: "fw-bold my-sm text-left" %>
+      <%= form.text_area :text , class: "m-auto w-100" %>
     </p>
 
-    <div class="form-select-btn-scope">
+    <div class="my-md">
       <%= form.label :status , class: "fw-bold form-select-btn" %><br>
-      <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+      <%= form.select :status, ['public', 'private', 'archived'], selected: 'public'  , class: "m-auto w-100"  %>
     </div>
     <section>
       <div class="create-btn">
