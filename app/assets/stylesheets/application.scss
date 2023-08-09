@@ -153,33 +153,33 @@ ul {
   }
 }
 
-
+//コメント追加
 .comment-block {
   width: 50%;
-}
-//コメントカード
-.comment_card {
-  width: 90%;
-  padding: 50px 50px 0 50px;
-  border-radius: 10px;
-  .from-input-scope {
-    display: grid;
-  }
-  //Title入力欄
-  input[type="text"] {
-    height: 50px;
-  }
-  //Text入力欄
-  textarea {
-    height: 50px;
-  }
-  //Create Articleボタン
-  input[type="submit"] {
-    width: 40%;
-    height: 50px;
-    border: 0px;
-    border-radius: 5px;
-    text-decoration: none;
+  //コメントカード
+  .comment_card {
+    width: 90%;
+    padding: 50px 50px 0 50px;
+    border-radius: 10px;
+    .from-input-scope {
+      display: grid;
+    }
+    //commenter入力欄
+    input[type="text"] {
+      height: 50px;
+    }
+    //body入力欄
+    textarea {
+      height: 50px;
+    }
+    //Create Commentボタン
+    input[type="submit"] {
+      width: 55%;
+      height: 50px;
+      border: 0px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
   }
 }
 
@@ -187,28 +187,12 @@ ul {
 .comments-block {
   height: 75%;
   overflow: overlay;
-}
-//コメントリスト
-.comments_list {
-  width: 100%;
-}
-
-.comment-area {
-  border-radius: 10px;
-}
-//削除ボタン
-.destroy-btn {
-  border-radius: 10px;
-}
-//
-.post-body {
-  
-}
-
-
-
-//記事内容
-.content-block {
-
+  .comment-area {
+    border-radius: 10px;
+  }
+  //削除ボタン
+  .destroy-btn {
+    border-radius: 10px;
+  }
 }
 
