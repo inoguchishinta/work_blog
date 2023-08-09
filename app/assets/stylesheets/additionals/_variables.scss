@@ -3,6 +3,7 @@ $color-header-back: rgb(21, 0, 105);
 $color-blue: #0077e1;
 $color-green: #029e38;
 $color-red: #ff0000;
+$color-light-grey: rgb(227, 227, 227);
 $color-grey: #868686;
 $color-white: #FFFFFF;
 $color-black: #000000;
@@ -12,6 +13,7 @@ $colors: (
   'blue': $color-blue, 
   'green': $color-green,
   'red': $color-red,
+  'light-grey': $color-light-grey,
   'grey': $color-grey,
   'white': $color-white,
   'black': $color-black

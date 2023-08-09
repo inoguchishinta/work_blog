@@ -154,97 +154,61 @@ ul {
 }
 
 
+.comment-block {
+  width: 50%;
+}
+//コメントカード
+.comment_card {
+  width: 90%;
+  padding: 50px 50px 0 50px;
+  border-radius: 10px;
+  .from-input-scope {
+    display: grid;
+  }
+  //Title入力欄
+  input[type="text"] {
+    height: 50px;
+  }
+  //Text入力欄
+  textarea {
+    height: 50px;
+  }
+  //Create Articleボタン
+  input[type="submit"] {
+    width: 40%;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+}
+
+//コメントブロック
+.comments-block {
+  height: 75%;
+  overflow: overlay;
+}
+//コメントリスト
+.comments_list {
+  width: 100%;
+}
+
+.comment-area {
+  border-radius: 10px;
+}
+//削除ボタン
+.destroy-btn {
+  border-radius: 10px;
+}
+//
+.post-body {
+  
+}
 
 
 
-// .header-float{
-//   width: 100%;
-// }
+//記事内容
+.content-block {
 
-//showスクリーン
+}
 
-// .show-screen{
-//   width: $size-max-vw;
-// }
-
-// .card{
-//   width: $size-max-vw;
-//   display: flex;
-//   border: 2px solid $color-solid;
-// }
-
-// .blog-card{
-//   margin: auto;
-//   text-align: center;
-//   padding: $padding-all-default;
-//   width: $size-max-vw;
-//   height: $size-def-min-vh;
-//   border-right: 2px solid $color-solid;
-// }
-
-// .blog-body{
-//   font-size: 27px;
-//   text-align: left;
-// }
-// .blog-title{
-//   font-size: 27px;
-//   text-align: left;
-// }
-
-// .comment-card{
-//   margin: 0px;
-// }
-
-// //comment.erb
-// .comments-card{
-//   height: 50vh;
-//   width: 40vw;
-//   text-align: start;
-//   padding: $padding-all-default;
-//   overflow: overlay;
-//   background-color: $color-white;
-//   h2{
-//     background-color: $color-black;
-//     color: $color-white;
-//   }
-// }
-
-// .comment-destroy{
-//   margin: 0px;
-// }
-
-// .comment-form-scope{
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .create-comment-scope{
-//   margin-top: $size-lg;
-//   text-align: start;
-//   margin-left: $size-xxxl;
-//   input[type="submit"] {
-//     border: 0px;
-//     height: $size-xl;
-//     width: $size-xxxl + $size-md;
-//     background-color: $color-default-button;
-//     border-radius: $size-xs;
-//     padding: $padding-all-min;
-//     color: $color-white;
-//     text-decoration: none;
-//   }
-// }
-
-// .comment-destroy a{
-//   background-color: $color-destroy-button;
-// }
-
-// .comment-status{
-// }
-
-// .comment-title{
-//   width: 50vw;
-// }
-
-// .comment-body{
-//   width: 50vw;
-// }
