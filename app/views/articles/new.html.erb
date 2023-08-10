@@ -1,5 +1,11 @@
-<h1>New article</h1>
+<div class="form-header color-header-back text-white d-flex align-items-center justify-content-space-between px-xxl py-sm">
+  <h1>New article</h1>
+  <%= link_to 'Back', articles_path , class: "btn color-white text-black p-xs" %>
+</div>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', articles_path %>
+<section class="main-block text-center w-100 my-xl">
+  <div class="blog_card color-white mt-xl d-inline-block text-center">
+    <h2>記事作成</h2>
+    <%= render 'form' %>
+  </div>
+</section>

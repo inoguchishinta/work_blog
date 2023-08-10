@@ -1,19 +1,21 @@
 <% unless comment.archived? %>
 
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
-
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
-  
-  <p>
-    <%= link_to 'Destroy Comment', [comment.article, comment],
-                method: :delete,
-                data: { confirm: 'Are you sure?' } %>
-  </p>
+  <div class="comment-area px-sm m-xl color-light-grey">
+    <p class="comment-parts-area pt-xs my-xs">
+      <strong>Commenter:</strong>
+      <%= comment.commenter %>
+    </p>
+    <div class="d-flex justify-content-space-between">
+      <p class="comment-parts-area my-xs">
+        <strong>Comment:</strong>
+        <%= comment.body %>
+      </p>
+      <p class="destroy-btn my-xs color-red text-white p-xs">
+        <%= link_to 'Destroy Comment', [comment.article, comment],
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } %>
+      </p>
+    </div>
+  </div>
 
 <% end %>

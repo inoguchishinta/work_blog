@@ -1,17 +1,23 @@
 <%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
+  <p class="text-black from-input-scope">
+    <%= form.label :commenter , class: "fw-bold my-sm text-left" %>
+    <%= form.text_field :commenter , class: "m-auto w-100" %>
   </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
+
+  <p class="text-black from-input-scope">
+    <%= form.label :body , class: "fw-bold my-sm text-left" %>
+    <%= form.text_area :body , class: "m-auto w-100" %>
   </p>
-  <div>
-    <%= form.label :status %><br>
-    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
-  </div> 
-  <p>
-    <%= form.submit %>
-  </p>
+
+  <div class="my-md">
+    <%= form.label :status , class: "fw-bold form-select-btn" %><br>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public'  , class: "m-auto w-100"  %>
+  </div>
+  <section>
+    <div class="create-btn my-xl">
+      <p>
+        <%= form.submit "Create Comment", class: "color-blue text-white" %>
+      </p>
+    </div>
+  </section>
 <% end %>
