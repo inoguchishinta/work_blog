@@ -24,12 +24,10 @@
       <%= form.label :status , class: "fw-bold form-select-btn" %><br>
       <%= form.select :status, ['public', 'private', 'archived'], selected: 'public'  , class: "m-auto w-100"  %>
     </div>
-    <section>
-      <div class="create-btn my-xl">
-        <p>
-          <%= form.submit "Create Article", class: "color-blue text-white" %>
-        </p>
-      </div>
-    </section>
+    <div class="create-btn my-xl">
+      <p>
+        <%= form.submit "Create Article", class: "color-blue text-white" %>
+      </p>
+    </div>
   </div>
 <% end %>

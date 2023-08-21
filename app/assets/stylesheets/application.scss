@@ -127,14 +127,6 @@ ul {
   .from-input-scope {
     display: grid;
   }
-  //Title入力欄
-  input[type="text"] {
-    height: 50px;
-  }
-  //Text入力欄
-  textarea {
-    height: 50px;
-  }
   //Create Articleボタン
   input[type="submit"] {
     width: 40%;
@@ -163,14 +155,6 @@ ul {
     .from-input-scope {
       display: grid;
     }
-    //commenter入力欄
-    input[type="text"] {
-      height: 50px;
-    }
-    //body入力欄
-    textarea {
-      height: 50px;
-    }
     //Create Commentボタン
     input[type="submit"] {
       width: 55%;
@@ -180,6 +164,15 @@ ul {
       text-decoration: none;
     }
   }
+}
+
+//commenter入力欄
+input[type="text"] {
+  height: 50px;
+}
+//body入力欄
+textarea {
+  height: 50px;
 }
 
 //コメントブロック
