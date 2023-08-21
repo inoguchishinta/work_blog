@@ -84,13 +84,13 @@ ul {
 //テーブル
 .post-table {
   width: 70%;
-  border: 1.5px solid $color-grey;
+  border: 1.5px solid $color-gray;
   border-collapse:  collapse;
   .post-th {
-    border: 1px solid $color-grey;
+    border: 1px solid $color-gray;
     }
   .post-td {
-    border: 1px solid $color-grey;
+    border: 1px solid $color-gray;
     &.button {
       //中央配置 + 縦線削除
       border-left: 0px;
